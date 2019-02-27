@@ -1,0 +1,11 @@
+<h1>My Tasks#index</h1>
+<p>Find me in app/views/tasks/index.html.erb</p>
+
+<!-- <form action="/index.html.erb">
+  <input type="checkbox" name="task" value="task"><br>
+</form> -->
+
+<% @tasks.each do |task| %>
+  <%= task.title %>
+  <%= task.completed %>
+<% end %>
